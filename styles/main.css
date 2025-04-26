@@ -1,0 +1,87 @@
+html {
+	height: 100%;
+}
+
+header {
+	background-color: #2c52b3;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	font-family: Helvetica;
+}
+
+
+#logo {
+	display: block;
+	margin: auto;
+	width: 300px;
+	height: auto;
+}
+
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+    display: flex;
+}
+
+#nav_menu ul li {
+	float: left;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+#nav_menu ul li a {
+	display: block;
+	width: 100%; /* nav bar spans across the entire screen */
+    text-align: center;
+    font-size:18px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #2c52b3;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #ffe24d;
+}
+#nav_menu ul ul { /* controls the display menu & prevents it from being displayed by default */
+	display: none;
+	position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li { /* controls elements in the submenu */
+	float: none;
+	z-index: 3;
+}
+#nav_menu ul li:hover > ul { /* the "hover" makes the submenu appear */
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+	background-color: #2c52b3;
+	margin-top: auto;
+	position: fixed;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+    height: 50%;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
