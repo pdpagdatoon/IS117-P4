@@ -15,15 +15,22 @@ body {
 main {
 	margin: 2%;
 	font-family: Helvetica;
-	text-align: center;
+	
 }
 
 main h1 {
 	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2%;
 }
 
 main p {
 	font-size: larger;
+	float: left;
+}
+
+main img {
+	float: right
 }
 
 #logo {
