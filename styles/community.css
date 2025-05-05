@@ -129,3 +129,21 @@ footer p {
 	background-color: #2c52b3 !important;
 	margin: 0.5% !important;
 }
+
+@media only screen and (max-width: 1198px) {
+    #nav_menu ul li a {
+        font-size: 10px;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 35px;
+        padding: 35px 0 35px 0;
+    }
+    main p {
+        font-size: 15px;
+        padding: 40px 40px 60px 40px; 
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
