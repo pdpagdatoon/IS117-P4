@@ -27,10 +27,13 @@ main h1 {
 main p {
 	font-size: larger;
 	float: left;
+	width: 50%;
+	margin: 1%
 }
 
 main img {
-	float: right
+	width: 40%;
+	height: auto;
 }
 
 #logo {
@@ -66,7 +69,7 @@ main img {
     font-weight: bold;
 }
 #nav_menu a.current {
-	color: #ffe24d;
+	color: #fff867;
 }
 #nav_menu ul ul { 
 	display: none;
